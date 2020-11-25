@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "nodejs portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "run": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FFFFFUNKYMUZIK/portfolio.git"
+  },
+  "author": "CJH",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.7",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
+  },
+  "bugs": {
+    "url": "https://github.com/FFFFFUNKYMUZIK/portfolio/issues"
+  },
+  "homepage": "https://github.com/FFFFFUNKYMUZIK/portfolio#readme"
+}
