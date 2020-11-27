@@ -18,9 +18,9 @@
 
   const routes = {
     // path: url
-    '/': '/data/home.json',
-    '/service': '/data/service.html',
-    '/about': '/data/about.json'
+    '/profile': '/profile.json',
+    '/projects': '/projects.json',
+    '/contact': '/contact.json',
   };
 
   const render = async path => {
@@ -36,7 +36,7 @@
 
       if (contentType?.includes('application/json')) {
         const json = await res.json();
-        body.innerHTML = `<h1>${json.title}</h1><p>${json.content}</p>`;
+        body.innerHTML = `${json.content}`;
       } else {
         body.innerHTML = await res.text();
       }
@@ -73,10 +73,9 @@
   });
 
   /* root path */
-  render('/');
+  render('/profile');
 
   /* refresh path -> route in server */
-
 }());
 
 
