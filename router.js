@@ -2,12 +2,12 @@ const exp = require('express');
 const path = require('path');
 const router = exp.Router();
 const passport = require('passport');
-
 /* crypto func */
 const {encrypt, decrypt} = require('./crypto');
-
 /* db schema */
 const Users = require('./user.js');
+
+const homedir = '/profile';
 
 /* redirect to login page for who is not authenticated */
 const isAuthenticated = function (req, res, next) {
@@ -24,7 +24,7 @@ router.get('/favicon.ico', (req, res) =>{
 
 router.get('/', isAuthenticated, (req,res) =>{
    console.log(req.connection.remoteAddress, "enters!");
-	 res.redirect('/profile');
+	 res.redirect(homedir);
 })
 
 /* for debug */
@@ -45,7 +45,7 @@ router.get('/login', (req,res, next) =>{
   res.sendFile(path.join(__dirname, 'data', 'html','login.html'));
 })
 
-router.get('/profile', isAuthenticated, (req,res) =>{
+router.get(homedir, isAuthenticated, (req,res) =>{
 	  res.sendFile(path.join(__dirname, 'data', 'html','main.html'));
 })
 

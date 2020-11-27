@@ -4,7 +4,6 @@
   "description": "nodejs portfolio page",
   "main": "index.js",
   "scripts": {
-    "run": "node server.js"
   },
   "repository": {
     "type": "git",
