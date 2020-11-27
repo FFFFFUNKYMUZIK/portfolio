@@ -47,11 +47,13 @@ In this json, image file directory must not include subdirectory, just use `/(fi
 
 #### Specify your own password
 
-In projects user id for storing session and authentication is temporarily defined as `viewer'. Database also stores this user id.
+In this projects, user id for storing session and authentication is temporarily defined as `viewer'. Database also stores this user id.
 
-To specify your own password for log-in to portfolio, modify the arguments and use `pwgen.js`.
+To specify your own password for log-in to the portfolio, modify the arguments and use `pwgen.js`.
 
-<img src="figures/add_pw_process.gif" width="60%" alt="Screenshot7" />
+<p align="center">
+<img src="figures/add_pw_process.gif" width="80%" alt="Screenshot7" />
+</p>
 
 ## How to run
 
