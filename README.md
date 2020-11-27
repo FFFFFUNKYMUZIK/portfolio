@@ -7,12 +7,10 @@ It utilizes NodeJS & Pjax, MongoDB.
 
 ## How it looks like
 
-<div align="center">
-<img src="figures/login_page.jpg" width="40%" alt="Screenshot1" />
-<img src="figures/main_page.jpg" width="40%" alt="Screenshot2" />
-</div>
+<p align="center">
+<img src="figures/login_process.gif" width="50%" alt="Screenshot3" align="center" />
+</p>
 
-<img src="figures/login_process.gif" width="60%" alt="Screenshot3" />
 
 ---
 ## Customize
@@ -21,7 +19,9 @@ It utilizes NodeJS & Pjax, MongoDB.
 
 If you want to add menus and contents, just edit three files : `main.js`, `main.html`, `router.js`.
 
-<img src="figures/add_menu_process.gif" width="60%" alt="Screenshot4" />
+<p align="center">
+<img src="figures/add_menu_process.gif" width="80%" alt="Screenshot4" />
+</p>
 
 and then, add json file under `{$Project_root}/portfolio/data/json/` for newly added tab with key `content` like this:
 
@@ -32,13 +32,18 @@ and then, add json file under `{$Project_root}/portfolio/data/json/` for newly a
 ```
 contents value must follow HTML format.
 
+<p align="center">
 <img src="figures/add_data_process.gif" width="60%" alt="Screenshot5" />
-
+</p>
+    
 then the pages like :
 
-<img src="figures/add_menu_result.gif" width="60%" alt="Screenshot6" />
+<p align="center">
+<img src="figures/add_menu_result.gif" width="50%" alt="Screenshot6" />
+</p>
 
 In this json, image file directory must not include subdirectory, just use `/(filename).jpg` as if the file exists on project root folder.
+<br>
 
 #### Specify your own password
 
