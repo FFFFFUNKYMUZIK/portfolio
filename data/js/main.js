@@ -61,6 +61,8 @@
     item.classList.contains('is-active') && handleIndicator(item);
   });
 
+
+/* refers to https://github.com/ungmo2/spa-example */
   // popstate 이벤트는 history entry가 변경되면 발생한다.
   // PJAX 방식은 hash를 사용하지 않으므로 hashchange 이벤트를 사용할 수 없다.
   // popstate 이벤트는 pushState에 의해 발생하지 않는다.
