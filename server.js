@@ -56,6 +56,6 @@ app.use(bodyParser.urlencoded({extended:true})); //enable to parse nested object
 app.use(express.static(path.join(__dirname, 'data')));
 app.use('/', router);
 
-app.listen(port, host, () => {
+app.listen(port, () => {
 	console.log(`Express server listen : http://${host}:${port}/`);
 })

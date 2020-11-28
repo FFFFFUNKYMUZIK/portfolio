@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "nodejs portfolio page",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FFFFFUNKYMUZIK/portfolio.git"

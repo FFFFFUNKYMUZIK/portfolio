@@ -2,4 +2,4 @@
 /* command line : node pwgen.js */
 
 const dbhelper = require('./pwgen_db.js');
-dbhelper.pwgen('viewer', 'password-to-login');
+dbhelper.pwgen('viewer', 'share-pf');
