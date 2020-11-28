@@ -15,7 +15,7 @@ It utilizes NodeJS & Pjax, MongoDB.
 ---
 ## Customize
 
-#### Add menu & content
+### Add menu & content
 
 If you want to add menus and contents, just edit three files : `main.js`, `main.html`, `router.js`.
 
@@ -45,7 +45,8 @@ then the pages like :
 In this json, image file directory must not include subdirectory, just use `/(filename).jpg` as if the file exists on project root folder.
 <br>
 
-#### Specify your own password
+
+### Specify your own password
 
 In this projects, user id for storing session and authentication is temporarily defined as `viewer'. Database also stores this user id.
 
