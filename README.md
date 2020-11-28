@@ -55,6 +55,7 @@ To specify your own password for log-in to the portfolio, modify the arguments a
 <img src="figures/add_pw_process.gif" width="80%" alt="Screenshot7" />
 </p>
 
+---
 ## How to run
 
     $ npm install
@@ -63,12 +64,14 @@ To specify your own password for log-in to the portfolio, modify the arguments a
     or
     $ npm start
     
+---
 ## Reference
 
   - How to create your first login page with HTML, CSS and JavaScript(https://medium.com/swlh/how-to-create-your-first-login-page-with-html-css-and-javascript-602dd71144f1)
   - Navbar Menu with Underline Hover Effect(https://www.youtube.com/watch?v=agsR08aAO1w)
   - github repo(https://github.com/ungmo2/spa-example)
 
+---
 ## License
 
 [The MIT License](http://opensource.org/licenses/MIT)
