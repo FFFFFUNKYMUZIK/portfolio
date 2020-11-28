@@ -18,12 +18,24 @@
 
   const routes = {
     // path: url
-    '/profile': '/profile.json',
-    '/projects': '/projects.json',
-    '/contact': '/contact.json',
+    '/profile': '/json/profile.json',
+    '/projects': '/json/projects.json',
+    '/contact': '/json/contact.json',
   };
 
   const render = async path => {
+
+    let setInnerHTML = function(elm, html) {
+      elm.innerHTML = html;
+      Array.from(elm.querySelectorAll("script")).forEach(oldScript => {
+        const newScript = document.createElement("script");
+        Array.from(oldScript.attributes)
+          .forEach(attr => newScript.setAttribute(attr.name, attr.value));
+        newScript.appendChild(document.createTextNode(oldScript.innerHTML));
+        oldScript.parentNode.replaceChild(newScript, oldScript);
+      });
+    }
+
     try {
       const url = routes[path];
       if (!url) {
@@ -36,9 +48,9 @@
 
       if (contentType?.includes('application/json')) {
         const json = await res.json();
-        body.innerHTML = `${json.content}`;
+        setInnerHTML(body, `${json.content}`);
       } else {
-        body.innerHTML = await res.text();
+        setInnerHTML(body, await res.text());
       }
     } catch (err) {
       console.error(err);

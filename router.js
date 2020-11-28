@@ -55,14 +55,6 @@ router.get(['/projects', '/contact'], isAuthenticated, (req,res) =>{
     res.redirect('/');
 })
 
-router.get('/:file.json', isAuthenticated, (req,res) =>{
-    res.sendFile(path.join(__dirname, 'data', 'json', req.params.file+'.json'));
-})
-
-router.get('/:file.jpg', isAuthenticated, (req,res) =>{
-    res.sendFile(path.join(__dirname, 'data', 'image', req.params.file+'.jpg'));
-})
-
 router.post('/login',
             (req, res, next)=>{
               console.log(req.connection.remoteAddress, "attempts to connect!");

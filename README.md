@@ -42,9 +42,11 @@ then the pages like :
 <img src="figures/add_menu_result.gif" width="50%" alt="Screenshot6" />
 </p>
 
-In this json, image file directory must not include subdirectory, just use `/(filename).jpg` as if the file exists on project root folder.
 <br>
 
+It is also permitted to use html file as contents.
+
+For resource request in HTML, use relative directory to data: like `/image/imagename.jpg`, `/js/jsname.js`.
 
 ### Specify your own password
 
